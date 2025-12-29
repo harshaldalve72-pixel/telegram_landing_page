@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+}
+
+.card {
+  border: 2px solid #ffe600;
+  box-shadow: 0 0 15px #ffe600;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #ffe600;
+  box-shadow: 0 0 15px #ffe600;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #ffe600;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ff88, #00ccff);
+  color: black;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00ff88;
+  margin-bottom: 15px;
+}
+
+.rating {
+  margin-top: 15px;
+  color: gold;
+}
+
+.rating p {
+  color: white;
+  font-size: 13px;
+}
+
+.result-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.members {
+  font-size: 36px;
+  color: #00ff88;
+}
+
+.active {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .members {
+    font-size: 32px;
+  }
+}

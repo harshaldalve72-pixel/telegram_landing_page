@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DM Win Number Injector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="img2.jpg" alt="Profile" class="profile" />
+
+      <h1>DM WIN NUMBER INJECTOR</h1>
+
+      <p class="subtitle">
+        Sahi Prediction Free off Cost <br>
+        आज ही जुड़ें हमारे
+      </p>
+
+      <!-- 🔗 Telegram Link -->
+      <a href="https://t.me/+mcdbE8yusS4xZjFl" class="btn" target="_blank">
+        🚀 JOIN TELEGRAM FREE
+      </a>
+
+      <div class="rating">
+        ⭐⭐⭐⭐⭐
+        <p>Channel Rating</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img1.jpg" alt="Result" class="result-img" />
+
+      <!-- 🔥 Animated Counter -->
+      <h2 class="members" id="memberCounter">10,000</h2>
+      <p class="active">ACTIVE MEMBER</p>
+    </div>
+
+  </div>
+
+  <!-- ✅ Counter Script -->
+  <script>
+    const START_COUNT = 10000;
+    const FINAL_COUNT = 25000; // 25K subscribers
+    const DURATION = 7000; // 7 seconds
+
+    const counter = document.getElementById("memberCounter");
+    let startTime = null;
+
+    function animateCounter(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+
+      const value = Math.min(
+        Math.floor(
+          START_COUNT +
+          (progress / DURATION) * (FINAL_COUNT - START_COUNT)
+        ),
+        FINAL_COUNT
+      );
+
+      counter.textContent = value.toLocaleString();
+
+      if (progress < DURATION) {
+        requestAnimationFrame(animateCounter);
+      } else {
+        counter.textContent = FINAL_COUNT.toLocaleString();
+      }
+    }
+
+    requestAnimationFrame(animateCounter);
+  </script>
+
+</body>
+</html>
