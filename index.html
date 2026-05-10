@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DM Win Number Injector</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  />
 
-  <link rel="stylesheet" href="style.css" />
+  <title>Yaar WIN Official</title>
 
-  <!-- ✅ Meta Pixel Code -->
+  <!-- ✅ META PIXEL -->
   <script>
     !function(f,b,e,v,n,t,s)
     {
       if(f.fbq)return;
+
       n=f.fbq=function(){
         n.callMethod ?
         n.callMethod.apply(n,arguments) :
@@ -35,72 +38,318 @@
     }(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
 
+    // ✅ YOUR PIXEL ID
     fbq('init', '830095273190176');
 
-    // ✅ Page View Event
+    // ✅ PAGE VIEW EVENT
     fbq('track', 'PageView');
   </script>
-  <!-- End Meta Pixel Code -->
 
-</head>
-
-<body>
-
-  <!-- ✅ Meta Pixel NoScript -->
   <noscript>
-    <img height="1" width="1" style="display:none"
+    <img
+      height="1"
+      width="1"
+      style="display:none"
       src="https://www.facebook.com/tr?id=830095273190176&ev=PageView&noscript=1"
     />
   </noscript>
 
-  <div class="container">
+  <style>
 
-    <!-- LEFT CARD -->
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#050816;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:15px;
+      overflow-x:hidden;
+    }
+
+    .main-box{
+      width:100%;
+      max-width:700px;
+    }
+
+    /* TOP BAR */
+
+    .top-bar{
+      border:2px solid #f5b800;
+      border-radius:40px;
+      text-align:center;
+      padding:16px;
+      color:#ffbf00;
+      font-size:20px;
+      font-weight:700;
+      margin-bottom:22px;
+      background:#111521;
+      letter-spacing:1px;
+      line-height:1.4;
+    }
+
+    /* CARD */
+
+    .card{
+      background:#111827;
+      border:2px solid #f5b800;
+      border-radius:25px;
+      padding:35px 22px;
+      text-align:center;
+      color:white;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+    }
+
+    /* LOGO */
+
+    .logo{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#7d00ff,#d100ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:auto;
+      font-size:26px;
+      font-weight:900;
+      color:white;
+      box-shadow:0 0 20px rgba(153,0,255,0.5);
+      padding:10px;
+      text-align:center;
+    }
+
+    .live{
+      margin:22px auto 18px;
+      background:#e72828;
+      width:85px;
+      padding:10px;
+      border-radius:50px;
+      font-weight:700;
+      font-size:18px;
+    }
+
+    h1{
+      font-size:42px;
+      font-weight:900;
+      margin-bottom:12px;
+      line-height:1.3;
+      word-break:break-word;
+    }
+
+    .subs{
+      color:#18ff6d;
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:30px;
+    }
+
+    /* STATS */
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:15px;
+      margin-bottom:30px;
+    }
+
+    .stat-box{
+      border:2px solid #f5b800;
+      border-radius:18px;
+      padding:18px 10px;
+      background:#0d1320;
+    }
+
+    .stat-box h2{
+      font-size:26px;
+      margin-bottom:8px;
+    }
+
+    .stat-box p{
+      font-size:15px;
+      color:#9da3b0;
+    }
+
+    /* BUTTON */
+
+    .join-btn{
+      display:block;
+      width:100%;
+      background:#ffbf00;
+      color:#000;
+      text-decoration:none;
+      padding:22px 15px;
+      border-radius:60px;
+      font-size:24px;
+      font-weight:900;
+      transition:0.3s;
+      margin-bottom:25px;
+      box-shadow:0 8px 20px rgba(255,191,0,0.3);
+    }
+
+    .join-btn:hover{
+      transform:scale(1.02);
+    }
+
+    .bottom-text{
+      color:#8f96a8;
+      font-size:16px;
+      line-height:1.7;
+    }
+
+    .bottom-text a{
+      color:white;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:600px){
+
+      body{
+        padding:10px;
+      }
+
+      .top-bar{
+        font-size:16px;
+        padding:14px;
+      }
+
+      .card{
+        padding:28px 18px;
+      }
+
+      .logo{
+        width:95px;
+        height:95px;
+        font-size:22px;
+      }
+
+      h1{
+        font-size:32px;
+      }
+
+      .subs{
+        font-size:20px;
+      }
+
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+      .stat-box h2{
+        font-size:24px;
+      }
+
+      .join-btn{
+        font-size:21px;
+        padding:20px 12px;
+      }
+
+      .bottom-text{
+        font-size:15px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="main-box">
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+      👑 INDIA'S #1 TRUSTED VIP CHANNEL 👑
+    </div>
+
+    <!-- CARD -->
+
     <div class="card">
 
-      <img src="img3.jpg" alt="Profile" class="profile" />
+      <!-- LOGO -->
 
-      <h1>DM WIN NUMBER INJECTOR</h1>
+      <div class="logo">
+        Yaar WIN
+      </div>
 
-      <p class="subtitle">
-        Sahi Prediction Free off Cost <br>
-        आज ही जुड़ें हमारे
-      </p>
+      <!-- LIVE -->
 
-      <!-- ✅ Telegram Button with Subscribe Tracking -->
+      <div class="live">
+        LIVE
+      </div>
+
+      <!-- TITLE -->
+
+      <h1>Yaar WIN 🚀🚀</h1>
+
+      <!-- SUBS -->
+
+      <div class="subs">
+        25,000+ Subscribers
+      </div>
+
+      <!-- STATS -->
+
+      <div class="stats">
+
+        <div class="stat-box">
+          <h2>98%</h2>
+          <p>Win Rate</p>
+        </div>
+
+        <div class="stat-box">
+          <h2>5000₹</h2>
+          <p>Daily Earn</p>
+        </div>
+
+        <div class="stat-box">
+          <h2>25K+</h2>
+          <p>Members</p>
+        </div>
+
+      </div>
+
+      <!-- JOIN BUTTON -->
+
       <a
         href="https://t.me/+oF4h4dfw3qc4YjE1"
-        class="btn"
+        class="join-btn"
         target="_blank"
         onclick="trackSubscribe()"
       >
-        🚀 JOIN TELEGRAM FREE
+        🔥 JOIN VIP CHANNEL NOW
       </a>
 
-      <div class="rating">
-        ⭐⭐⭐⭐⭐
-        <p>Channel Rating</p>
+      <!-- BOTTOM TEXT -->
+
+      <div class="bottom-text">
+        You are invited to
+        <a href="https://t.me/+oF4h4dfw3qc4YjE1">
+          Yaar WIN
+        </a>
+        <br>
+        Tap above button to join free.
       </div>
-
-    </div>
-
-    <!-- RIGHT CARD -->
-    <div class="card">
-
-      <img src="img3.jpg" alt="Result" class="result-img" />
-
-      <!-- ✅ Animated Counter -->
-      <h2 class="members" id="memberCounter">10,000</h2>
-
-      <p class="active">ACTIVE MEMBER</p>
 
     </div>
 
   </div>
 
-  <!-- ✅ Subscribe Event Tracking -->
+  <!-- ✅ SUBSCRIBE EVENT -->
+
   <script>
-    function trackSubscribe() {
+
+    function trackSubscribe(){
 
       fbq('track', 'Subscribe', {
         value: 1,
@@ -108,44 +357,6 @@
       });
 
     }
-  </script>
-
-  <!-- ✅ Counter Script -->
-  <script>
-
-    const START_COUNT = 10000;
-    const FINAL_COUNT = 25000;
-    const DURATION = 7000;
-
-    const counter = document.getElementById("memberCounter");
-
-    let startTime = null;
-
-    function animateCounter(timestamp) {
-
-      if (!startTime) startTime = timestamp;
-
-      const progress = timestamp - startTime;
-
-      const value = Math.min(
-        Math.floor(
-          START_COUNT +
-          (progress / DURATION) *
-          (FINAL_COUNT - START_COUNT)
-        ),
-        FINAL_COUNT
-      );
-
-      counter.textContent = value.toLocaleString();
-
-      if (progress < DURATION) {
-        requestAnimationFrame(animateCounter);
-      } else {
-        counter.textContent = FINAL_COUNT.toLocaleString();
-      }
-    }
-
-    requestAnimationFrame(animateCounter);
 
   </script>
 
