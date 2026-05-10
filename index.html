@@ -4,32 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DM Win Number Injector</title>
+
   <link rel="stylesheet" href="style.css" />
 
   <!-- ✅ Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+      };
 
-fbq('init', '830095273190176');   // ✅ Updated Pixel ID
-fbq('track', 'PageView');
-</script>
-<!-- End Meta Pixel Code -->
+      if(!f._fbq)f._fbq=n;
+
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+
+    }(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '830095273190176');
+
+    // ✅ Page View Event
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
 
 </head>
+
 <body>
 
   <!-- ✅ Meta Pixel NoScript -->
@@ -41,7 +55,9 @@ fbq('track', 'PageView');
 
   <div class="container">
 
+    <!-- LEFT CARD -->
     <div class="card">
+
       <img src="img3.jpg" alt="Profile" class="profile" />
 
       <h1>DM WIN NUMBER INJECTOR</h1>
@@ -51,8 +67,13 @@ fbq('track', 'PageView');
         आज ही जुड़ें हमारे
       </p>
 
-      <!-- 🔗 Telegram Link -->
-      <a href="https://t.me/+oF4h4dfw3qc4YjE1" class="btn" target="_blank">
+      <!-- ✅ Telegram Button with Subscribe Tracking -->
+      <a
+        href="https://t.me/+oF4h4dfw3qc4YjE1"
+        class="btn"
+        target="_blank"
+        onclick="trackSubscribe()"
+      >
         🚀 JOIN TELEGRAM FREE
       </a>
 
@@ -60,35 +81,57 @@ fbq('track', 'PageView');
         ⭐⭐⭐⭐⭐
         <p>Channel Rating</p>
       </div>
+
     </div>
 
+    <!-- RIGHT CARD -->
     <div class="card">
+
       <img src="img3.jpg" alt="Result" class="result-img" />
 
-      <!-- 🔥 Animated Counter -->
+      <!-- ✅ Animated Counter -->
       <h2 class="members" id="memberCounter">10,000</h2>
+
       <p class="active">ACTIVE MEMBER</p>
+
     </div>
 
   </div>
 
+  <!-- ✅ Subscribe Event Tracking -->
+  <script>
+    function trackSubscribe() {
+
+      fbq('track', 'Subscribe', {
+        value: 1,
+        currency: 'INR'
+      });
+
+    }
+  </script>
+
   <!-- ✅ Counter Script -->
   <script>
+
     const START_COUNT = 10000;
     const FINAL_COUNT = 25000;
     const DURATION = 7000;
 
     const counter = document.getElementById("memberCounter");
+
     let startTime = null;
 
     function animateCounter(timestamp) {
+
       if (!startTime) startTime = timestamp;
+
       const progress = timestamp - startTime;
 
       const value = Math.min(
         Math.floor(
           START_COUNT +
-          (progress / DURATION) * (FINAL_COUNT - START_COUNT)
+          (progress / DURATION) *
+          (FINAL_COUNT - START_COUNT)
         ),
         FINAL_COUNT
       );
@@ -103,6 +146,7 @@ fbq('track', 'PageView');
     }
 
     requestAnimationFrame(animateCounter);
+
   </script>
 
 </body>
